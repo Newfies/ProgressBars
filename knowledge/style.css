@@ -1,0 +1,118 @@
+@font-face {
+    font-family: 'Product Sans';
+    src: url(res/fonts/Product\ Sans\ Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1a1a1a;
+    color: white;
+    font-family: 'Product Sans';
+}
+
+.container {
+    display: block;
+    margin: 2% 1%;
+    border: 2px solid #444;
+    padding: 2% 4%;
+}
+
+.report {
+    display: block;
+    background-color: #2b2b2b;
+    padding: 2% 4%;
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.report .title {
+    font-size: 3vw;
+    font-weight: bold;
+}
+
+.progress {
+    margin-left: 2%;
+}
+
+custom-meter {
+    display: block;
+    width: 25%;
+    height: 12%;
+    background-color: white;
+    border: 2px solid #3c3c3c;
+    padding: 1% 2%;
+    border-radius: 8px;
+}
+
+.progress-bar {
+	position: relative;
+	width: 500px;
+	height: 3em;
+	background-color: #111;
+	border-radius: 1.5em;
+	color: white;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.progress-bar::before {
+	content: attr(data-label) " " attr(percentage) "%";
+	display: flex;
+	align-items: center;
+	position: absolute;
+	left: .5em;
+	top: .5em;
+	bottom: .5em;
+	width: calc(100% - 3em);
+	min-width: 2rem;
+	max-width: calc(100% - 1em);
+	background-color: #444;
+	border-radius: 1em;
+	padding: 1em;
+}
+
+.more-details {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: 4%;
+}
+
+.progressbar {
+    position: relative;
+    width: 500px;
+    height: 3em;
+    background-color: #111;
+    border-radius: 1.5em;
+    color: white;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.progressbar p {
+    position: absolute; /* Keep absolute positioning */
+    top: 50%; /* Center vertically */
+    left: 0.5em; /* Align to the left */
+    transform: translateY(-50%); /* Adjust for vertical centering */
+    height: 2em;
+    width: calc(100% - 3em);
+    min-width: 2em;
+    max-width: calc(100% - 1em);
+    background-color: #444;
+    border-radius: 1em;
+    padding: 0.5em 1em; /* Adjust padding as needed */
+    display: flex; /* Keep flex for alignment */
+    align-items: center; /* Center content vertically */
+    margin: 0; /* Remove default margin */
+}
+
+.progressbar .per {
+    color: #bb2222;
+    margin-left: 2%;
+}

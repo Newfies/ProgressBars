@@ -1,0 +1,63 @@
+:root {
+    --NM1: #1A1A1A;
+    --NM2: #242424;
+    --NM3: #2E2E2E;
+    --NM4: #383838;
+    --NM5: #444444;
+    --NM6: #5C5C5C;
+    --NM7: #787878;
+    --F-Ubuntu: 'Ubuntu';
+}
+
+* {
+    user-select: none;
+    cursor: auto;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    font-family: var(--F-Ubuntu);
+}
+
+.container {
+    display: block;
+    margin: 2% 1%;
+    border: 2px solid #444;
+    padding: 2% 4%;
+}
+
+
+.progress-bar {
+    width: 50%;
+    height: 50px;
+    background-color: #111; /* Light gray background */
+    border-radius: 1.5em;
+    position: relative;
+    display: flex;
+    align-items: center; /* Vertically center the fill */
+    padding-left: 0.35%;
+    padding-right: 0.35%;
+}
+
+.progress-fill {
+    height: 2.25em; /* You can adjust this height to determine how much of the progress bar is filled */
+    background-color: #444; /* Green color for the fill */
+    border-radius: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-left: 0.25em;
+    margin-right: 0.25em;
+
+}
+
+.progress-label {
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    text-align: left;
+    padding-left: 3%;
+    width: 100%;
+}
